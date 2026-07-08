@@ -20,7 +20,7 @@ export default function Faq() {
                         <div className="blog-meta"><span>Engineering Guide</span> &bull; 8 min read</div>
                         <h3>Understanding Flexible Heaters: A Comprehensive Guide</h3>
                         <p>A flexible heater is a screen-printed or chemically etched foil heating element laminated between layers of flexible insulation. Discover how they provide targeted, uniform heat distribution and can conform to irregular surfaces and complex geometries.</p>
-                        <Link to="#" className="blog-read-more">Read Full Article &rarr;</Link>
+                        <Link to="/blog/understanding-flexible-heaters" className="blog-read-more">Read Full Article &rarr;</Link>
                     </div>
                 </article>
 

@@ -10,6 +10,7 @@ import AutoEV from './pages/AutoEV';
 import PIHeaters from './pages/PIHeaters';
 import ColdStart from './pages/ColdStart';
 import Faq from './pages/Faq';
+import BlogPost1 from './pages/BlogPost1';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -35,6 +36,7 @@ export default function App() {
             <Route path="/pi-heaters" element={<PIHeaters />} />
             <Route path="/cold-start" element={<ColdStart />} />
             <Route path="/faq" element={<Faq />} />
+            <Route path="/blog/understanding-flexible-heaters" element={<BlogPost1 />} />
             <Route path="*" element={<Home />} />
           </Routes>
         </div>
