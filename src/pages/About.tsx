@@ -78,8 +78,10 @@ export default function About() {
         <section className="clients-section" style={{ padding: '80px 0', background: '#f8f8f8', textAlign: 'center' }}>
             <div className="custom-container">
                 <h2 style={{ fontSize: '32px', textTransform: 'uppercase', marginBottom: '40px', color: 'var(--text-dark)' }}>Our Clients</h2>
-                <div style={{ maxWidth: '900px', margin: '0 auto' }}>
-                    <img src="/clients.jpg" alt="Global Partners and Clients" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '8px', objectFit: 'cover' }} />
+                <div style={{ maxWidth: '900px', margin: '0 auto', border: '2px dashed #ccc', borderRadius: '8px', padding: '100px 20px', backgroundColor: '#fff', color: '#999', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+                    <i className="fa-regular fa-image" style={{ fontSize: '48px', marginBottom: '15px' }}></i>
+                    <h3 style={{ margin: '0 0 10px 0', color: '#666' }}>Client Logos Image Placeholder</h3>
+                    <p style={{ margin: 0, fontSize: '14px' }}>Upload your <strong>clients.jpg</strong> (or <strong>.png</strong>) to the <code>public/</code> folder via the file explorer and replace this block with an <code>&lt;img&gt;</code> tag.</p>
                 </div>
             </div>
         </section>
