@@ -75,12 +75,11 @@ export default function About() {
             </div>
         </section>
 
-        <section className="video-box">
+        <section className="clients-section" style={{ padding: '80px 0', background: '#f8f8f8', textAlign: 'center' }}>
             <div className="custom-container">
-                <h2>Corporate Presentation</h2>
-                <div className="video-wrapper">
-                    <i className="fa-solid fa-play"></i>
-                    <span style={{ position: 'absolute', bottom: '20px', color: '#666', fontSize: '12px' }}>MIYO TECHNOLOGY: MANUFACTURING EXCELLENCE</span>
+                <h2 style={{ fontSize: '32px', textTransform: 'uppercase', marginBottom: '40px', color: 'var(--text-dark)' }}>Our Clients</h2>
+                <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+                    <img src="/clients.jpg" alt="Global Partners and Clients" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '8px', objectFit: 'cover' }} />
                 </div>
             </div>
         </section>

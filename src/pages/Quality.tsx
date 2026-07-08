@@ -9,12 +9,6 @@ export default function Quality() {
             </div>
         </section>
 
-        <div className="breadcrumb">
-            <div className="custom-container">
-                <Link to="/">Home</Link> / Quality & Certifications
-            </div>
-        </div>
-
         <section className="section custom-container">
             <div className="section-header">
                 <h2>International Standards</h2>
@@ -76,6 +70,7 @@ export default function Quality() {
                 <Link to="/contact" className="btn-large">Request a Technical Consultation</Link>
             </div>
         </section>
+
     </main>
   );
 }

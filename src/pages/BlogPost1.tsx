@@ -3,23 +3,25 @@ import { Link } from 'react-router-dom';
 export default function BlogPost1() {
   return (
     <main>
-        <section className="resource-hero" style={{ 
-            padding: '120px 0', 
-            background: 'linear-gradient(rgba(0,45,86,0.7), rgba(0,45,86,0.7)), url("https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80") center/cover', 
-            color: 'white'
-        }}>
-            <div className="custom-container" style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
-                <div className="blog-meta" style={{ justifyContent: 'center', display: 'flex', marginBottom: '20px', color: 'rgba(255,255,255,0.8)' }}>
-                    <span style={{ color: 'white' }}>Engineering Guide</span> &bull; 8 min read
-                </div>
-                <h1 style={{ fontSize: '42px', color: 'white', marginBottom: '20px', lineHeight: '1.2' }}>Understanding Flexible Heaters: A Comprehensive Guide</h1>
-                <p style={{ fontSize: '18px', color: 'rgba(255,255,255,0.9)' }}>A deep dive into the technology, materials, and applications of modern flexible heating elements.</p>
-            </div>
-        </section>
-
-        <div className="custom-container blog-layout" style={{ margin: '60px auto' }}>
+        <div className="custom-container blog-detail-layout">
             
-            <div className="blog-main">
+            {/* Main Content Area */}
+            <div className="blog-main-left">
+                <div className="blog-detail-header">
+                    <h1 className="blog-detail-title">Understanding Flexible Heaters: A Comprehensive Guide</h1>
+                    <h2 className="blog-detail-subtitle">A deep dive into the technology, materials, and applications of modern flexible heating elements.</h2>
+                    <div className="blog-detail-meta">2026.7.7</div>
+                    
+                    <div className="blog-tags-row">
+                        <Link to="#" className="blog-tag-pill">Design Guide</Link>
+                        <Link to="#" className="blog-tag-pill">Flexible Heaters</Link>
+                        <Link to="#" className="blog-tag-pill">Design</Link>
+                        <Link to="#" className="blog-tag-pill">Thermal Transfer</Link>
+                    </div>
+                </div>
+
+                <div className="blog-detail-hero-img" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80')" }}></div>
+
                 <div className="article-content" style={{ fontSize: '18px', lineHeight: '1.8', color: 'var(--text-dark)' }}>
                     <p style={{ marginBottom: '25px' }}>
                         A flexible heater is a highly engineered, conformal heating element designed to provide precise, uniform thermal transfer to complex surfaces. Unlike rigid heaters, flexible heaters are constructed by laminating a conductive heating circuit (typically screen-printed silver, etched foil, or wire-wound) between layers of dielectric insulation.
@@ -55,7 +57,7 @@ export default function BlogPost1() {
                         Because the internal heating circuit is so close to the target surface, and the overall mass of the heater is low, flexible heaters can heat up and cool down extremely quickly. This allows for precise temperature control when paired with sensors and thermostats.
                     </p>
 
-                    <div style={{ background: 'var(--bg-light)', padding: '30px', borderRadius: '8px', borderLeft: '4px solid var(--accent-red)', marginTop: '50px', marginBottom: '50px' }}>
+                    <div style={{ background: 'var(--bg-light)', padding: '30px', borderRadius: '8px', borderLeft: '4px solid var(--primary-blue)', marginTop: '50px', marginBottom: '50px' }}>
                         <h4 style={{ margin: '0 0 10px 0', color: 'var(--primary-blue)' }}>Expert Tip</h4>
                         <p style={{ margin: '0', fontSize: '16px' }}>When designing a flexible heater system, always consider the "Watt Density" (watts per square inch). A higher watt density means faster heat-up times, but requires better heat-sinking to prevent the heater from burning out.</p>
                     </div>
@@ -65,73 +67,64 @@ export default function BlogPost1() {
                         Whether you are keeping an EV battery pack warm in freezing conditions, or preventing condensation on a surveillance camera lens, flexible heating technology provides a robust, customizable, and highly efficient solution. By understanding the basics of materials and construction, engineers can seamlessly integrate these advanced thermal systems into their next generation of products.
                     </p>
                 </div>
-
-                <div style={{ marginTop: '60px', paddingTop: '40px', borderTop: '1px solid #eee', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <Link to="/faq" className="blog-read-more" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                        &larr; Back to Articles
-                    </Link>
-                    <div className="blog-tags" style={{ display: 'flex', gap: '10px' }}>
-                        <span className="blog-tag">Engineering</span>
-                        <span className="blog-tag">Design Guide</span>
-                    </div>
-                </div>
             </div>
 
-            <aside className="blog-sidebar">
-                <h4>Related Articles</h4>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', marginBottom: '40px' }}>
-                    <Link to="#" style={{ display: 'flex', gap: '15px', textDecoration: 'none', alignItems: 'center' }}>
-                        <div style={{ width: '80px', height: '60px', backgroundImage: "url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80')", backgroundSize: 'cover', backgroundPosition: 'center', borderRadius: '4px' }}></div>
-                        <div>
-                            <h5 style={{ margin: '0 0 5px 0', fontSize: '14px', color: 'var(--primary-blue)', lineHeight: '1.3' }}>Polyimide vs. Silicone Rubber: Choosing the Right Solution</h5>
-                            <span style={{ fontSize: '12px', color: 'var(--text-gray)' }}>Materials &bull; 5 min read</span>
+            {/* Sidebar Right */}
+            <aside className="blog-sidebar-right">
+                
+                <div className="blog-sidebar-widget">
+                    <h4 className="blog-sidebar-title">Categories</h4>
+                    <div className="blog-sidebar-menu">
+                        <Link to="/faq" className="active">Design Guide</Link>
+                        <Link to="#">Heater Selector</Link>
+                        <Link to="#">Power/Time Calculator</Link>
+                        <Link to="#">Technical FAQ</Link>
+                        <Link to="#">White Papers</Link>
+                        <Link to="#">Case Studies</Link>
+                        <Link to="#">Video Center</Link>
+                        <Link to="#">Datasheet Download</Link>
+                    </div>
+                </div>
+
+                <div className="blog-sidebar-widget">
+                    <h4 className="blog-sidebar-title">Hot Articles</h4>
+                    
+                    <Link to="#" className="blog-mini-card">
+                        <div className="blog-mini-img" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80')" }}></div>
+                        <div className="blog-mini-content">
+                            <div className="blog-mini-meta">2026.6.16</div>
+                            <h5 className="blog-mini-title">How to Choose Heating Element Materials</h5>
                         </div>
                     </Link>
-                    <Link to="#" style={{ display: 'flex', gap: '15px', textDecoration: 'none', alignItems: 'center' }}>
-                        <div style={{ width: '80px', height: '60px', backgroundImage: "url('https://images.unsplash.com/photo-1555664424-778a1e5e1b48?auto=format&fit=crop&q=80')", backgroundSize: 'cover', backgroundPosition: 'center', borderRadius: '4px' }}></div>
-                        <div>
-                            <h5 style={{ margin: '0 0 5px 0', fontSize: '14px', color: 'var(--primary-blue)', lineHeight: '1.3' }}>The Importance of Watt Density in Thermal Engineering</h5>
-                            <span style={{ fontSize: '12px', color: 'var(--text-gray)' }}>Technical Design &bull; 6 min read</span>
+
+                    <Link to="#" className="blog-mini-card">
+                        <div className="blog-mini-img" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1555664424-778a1e5e1b48?auto=format&fit=crop&q=80')" }}></div>
+                        <div className="blog-mini-content">
+                            <div className="blog-mini-meta">2026.6.11</div>
+                            <h5 className="blog-mini-title">Power Density Calculation (W/cm²)</h5>
                         </div>
                     </Link>
-                    <Link to="#" style={{ display: 'flex', gap: '15px', textDecoration: 'none', alignItems: 'center' }}>
-                        <div style={{ width: '80px', height: '60px', backgroundImage: "url('https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?auto=format&fit=crop&q=80')", backgroundSize: 'cover', backgroundPosition: 'center', borderRadius: '4px' }}></div>
-                        <div>
-                            <h5 style={{ margin: '0 0 5px 0', fontSize: '14px', color: 'var(--primary-blue)', lineHeight: '1.3' }}>Advanced Heater Integration: Thermal Sensors & Control</h5>
-                            <span style={{ fontSize: '12px', color: 'var(--text-gray)' }}>Integration &bull; 4 min read</span>
+
+                    <Link to="#" className="blog-mini-card">
+                        <div className="blog-mini-img" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?auto=format&fit=crop&q=80')" }}></div>
+                        <div className="blog-mini-content">
+                            <div className="blog-mini-meta">2026.6.11</div>
+                            <h5 className="blog-mini-title">Temperature Uniformity Design</h5>
+                        </div>
+                    </Link>
+                    
+                    <Link to="#" className="blog-mini-card">
+                        <div className="blog-mini-img" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80')" }}></div>
+                        <div className="blog-mini-content">
+                            <div className="blog-mini-meta">2026.6.2</div>
+                            <h5 className="blog-mini-title">Thickness and Bending Radius Limits</h5>
                         </div>
                     </Link>
                 </div>
 
-                <h4>Categories</h4>
-                <ul className="blog-sidebar-list">
-                    <li><Link to="#">Engineering Guides (12)</Link></li>
-                    <li><Link to="#">Materials Science (8)</Link></li>
-                    <li><Link to="#">Quality & Compliance (5)</Link></li>
-                    <li><Link to="#">Industry News (3)</Link></li>
-                    <li><Link to="#">Terminology (1)</Link></li>
-                </ul>
-
-                <h4>Popular Tags</h4>
-                <div className="blog-tags">
-                    <Link to="#" className="blog-tag">Polyimide</Link>
-                    <Link to="#" className="blog-tag">Silicone Rubber</Link>
-                    <Link to="#" className="blog-tag">Watt Density</Link>
-                    <Link to="#" className="blog-tag">Cold-Start</Link>
-                    <Link to="#" className="blog-tag">EV Battery</Link>
-                    <Link to="#" className="blog-tag">Medical Devices</Link>
-                </div>
             </aside>
             
         </div>
-
-        <section className="contact-cta">
-            <div className="custom-container cta-content">
-                <h2>Ready to Start Your Custom Heater Project?</h2>
-                <p>Our technical engineering team is ready to assist you with design, prototyping, and manufacturing.</p>
-                <Link to="/contact" className="btn-large">Consult an Engineer</Link>
-            </div>
-        </section>
     </main>
   );
 }
