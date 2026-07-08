@@ -1,0 +1,5 @@
+.contact-cta, .contact-cta-white { background: linear-gradient(rgba(0,45,86,0.85), rgba(0,45,86,0.85)), url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80') center/cover; padding: 100px 0; text-align: center; border-top: none; }
+.cta-content h2 { color: white; font-size: 36px; margin-bottom: 20px; text-transform: uppercase; font-weight: 800; }
+.cta-content p { color: rgba(255,255,255,0.9); margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto; font-size: 18px; }
+.btn-large { background: var(--accent-red); color: white; padding: 18px 50px; font-weight: bold; text-transform: uppercase; display: inline-block; border-radius: 4px; border: none; cursor: pointer; transition: 0.3s;}
+.btn-large:hover { background: white; color: var(--primary-blue); transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }

@@ -18,12 +18,16 @@ export default function Footer() {
             </div>
             <div>
                 <h4>Headquarters</h4>
-                <p>Taiwan HQ</p>
-                <p>info@miyo-tech.com</p>
+                <ul style={{ listStyle: 'none', padding: 0, margin: 0, lineHeight: '1.8' }}>
+                    <li><strong>Address:</strong> 5F, No. 82-2, Dongshun St., Shulin Dist., New Taipei City 238, Taiwan</li>
+                    <li><strong>TEL:</strong> 886-2-8686-6888</li>
+                    <li><strong>FAX:</strong> 886-2-8686-9399</li>
+                    <li><strong>E-mail:</strong> miyo@miyo.com.tw</li>
+                </ul>
             </div>
-            <div style={{ gridColumn: 'span 2', textAlign: 'right' }}>
-                <p>© {new Date().getFullYear()} MIYO Technology Co., Ltd. All Rights Reserved.</p>
-            </div>
+        </div>
+        <div className="custom-container" style={{ borderTop: '1px solid #eee', marginTop: '40px', paddingTop: '20px', textAlign: 'center' }}>
+            <p style={{ margin: 0 }}>© {new Date().getFullYear()} MIYO Technology Co., Ltd. All Rights Reserved.</p>
         </div>
     </footer>
   );

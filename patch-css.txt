@@ -1,0 +1,24 @@
+.hero-split { display: grid; grid-template-columns: repeat(3, 1fr); height: 600px; }
+.hero-split-block { position: relative; display: flex; align-items: center; justify-content: flex-start; padding: 60px; text-decoration: none; overflow: hidden; transition: 0.3s; }
+.hero-split-block::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-position: center; background-size: cover; z-index: 1; transition: transform 0.5s ease; opacity: 0.4; mix-blend-mode: multiply; }
+.hero-split-block:hover::before { transform: scale(1.05); opacity: 0.5; }
+.hero-split-content { position: relative; z-index: 3; color: white; width: 100%; }
+.hero-split-sub { display: block; font-size: 14px; text-transform: uppercase; font-weight: 600; margin-bottom: 15px; letter-spacing: 1px; color: rgba(255,255,255,0.8); }
+.hero-split-content h2 { font-size: 40px; font-weight: 800; text-transform: uppercase; margin: 0 0 35px 0; line-height: 1.1; color: white; }
+.hero-split-btn { display: inline-block; padding: 14px 28px; background: transparent; border: 2px solid rgba(255,255,255,0.5); color: white; font-weight: bold; text-transform: uppercase; font-size: 14px; transition: 0.3s; }
+.hero-split-block:hover .hero-split-btn { background: white; color: var(--primary-blue); border-color: white; }
+
+.block-products { background-color: var(--accent-red); }
+.block-products::before { background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80'); filter: grayscale(100%); }
+
+.block-solutions { background-color: #2a2a2a; }
+.block-solutions::before { background-image: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80'); filter: grayscale(100%); mix-blend-mode: screen; opacity: 0.15; }
+.block-solutions:hover::before { opacity: 0.2; }
+
+.block-industries { background-color: var(--primary-blue); }
+.block-industries::before { background-image: url('https://images.unsplash.com/photo-1555664424-778a1e5e1b48?auto=format&fit=crop&q=80'); filter: grayscale(100%); }
+
+@media (max-width: 991px) {
+    .hero-split { grid-template-columns: 1fr; height: auto; }
+    .hero-split-block { height: 400px; padding: 40px; }
+}

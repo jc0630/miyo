@@ -3,10 +3,28 @@ import { Link } from 'react-router-dom';
 export default function Home() {
   return (
     <main>
-        <section className="hero-home">
-            <div className="custom-container">
-                <h1>Defining the Future of<br/>Precision Flexible Heating.</h1>
-            </div>
+        <section className="hero-split">
+            <Link to="/pi-heaters" className="hero-split-block block-products">
+                <div className="hero-split-content">
+                    <span className="hero-split-sub">Discover</span>
+                    <h2>Products &<br/>Capabilities</h2>
+                    <span className="hero-split-btn">Explore Products</span>
+                </div>
+            </Link>
+            <Link to="/cold-start" className="hero-split-block block-solutions">
+                <div className="hero-split-content">
+                    <span className="hero-split-sub">Custom</span>
+                    <h2>Engineered<br/>Solutions</h2>
+                    <span className="hero-split-btn">View Solutions</span>
+                </div>
+            </Link>
+            <Link to="/auto-ev" className="hero-split-block block-industries">
+                <div className="hero-split-content">
+                    <span className="hero-split-sub">Global</span>
+                    <h2>Served<br/>Industries</h2>
+                    <span className="hero-split-btn">Discover Industries</span>
+                </div>
+            </Link>
         </section>
 
         <section className="section">

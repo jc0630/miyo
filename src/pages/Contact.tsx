@@ -56,7 +56,7 @@ export default function Contact() {
                     <i className="fa-solid fa-location-dot"></i>
                     <div>
                         <h4>Our Location</h4>
-                        <p>No. XXX, Section X, XXX Road,<br/>New Taipei City, Taiwan (R.O.C.)</p>
+                        <p>5F, No. 82-2, Dongshun St., Shulin Dist.,<br/>New Taipei City 238, Taiwan</p>
                     </div>
                 </div>
 
@@ -64,7 +64,15 @@ export default function Contact() {
                     <i className="fa-solid fa-phone"></i>
                     <div>
                         <h4>Call Us</h4>
-                        <p>+886-2-XXXX-XXXX</p>
+                        <p>+886-2-8686-6888</p>
+                    </div>
+                </div>
+
+                <div className="info-item">
+                    <i className="fa-solid fa-fax"></i>
+                    <div>
+                        <h4>Fax</h4>
+                        <p>+886-2-8686-9399</p>
                     </div>
                 </div>
 
@@ -72,7 +80,7 @@ export default function Contact() {
                     <i className="fa-solid fa-envelope"></i>
                     <div>
                         <h4>Email Support</h4>
-                        <p>info@miyo-tech.com<br/>sales@miyo-tech.com</p>
+                        <p>miyo@miyo.com.tw</p>
                     </div>
                 </div>
 
