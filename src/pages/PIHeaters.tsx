@@ -22,12 +22,12 @@ export default function PIHeaters() {
 
         <section className="section-padding bg-light">
             <div className="custom-container">
-                <h2 className="section-title">Core Industry Applications</h2>
+                <h2 className="section-title">Custom Options</h2>
                 <div className="core-app-grid">
-                    <div className="core-app-card"><i className="fa-solid fa-microscope"></i><h4>Medical Diagnostics</h4></div>
-                    <div className="core-app-card"><i className="fa-solid fa-satellite"></i><h4>Aerospace Comms</h4></div>
-                    <div className="core-app-card"><i className="fa-solid fa-microchip"></i><h4>Semiconductor Tools</h4></div>
-                    <div className="core-app-card"><i className="fa-solid fa-mobile-screen"></i><h4>Wearable Electronics</h4></div>
+                    <div className="core-app-card"><i className="fa-solid fa-temperature-half"></i><h4>Thermistors</h4></div>
+                    <div className="core-app-card"><i className="fa-solid fa-bolt"></i><h4>Fuses</h4></div>
+                    <div className="core-app-card"><i className="fa-solid fa-tape"></i><h4>Adhesive Backing</h4></div>
+                    <div className="core-app-card"><i className="fa-solid fa-plug"></i><h4>Connectors</h4></div>
                 </div>
             </div>
         </section>

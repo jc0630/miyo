@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom';
 export default function Faq() {
   return (
     <main>
+        <section className="hero-banner">
+            <div className="custom-container">
+                <h1>Resources</h1>
+            </div>
+        </section>
         <div className="custom-container blog-list-layout">
             
             {/* Sidebar */}
