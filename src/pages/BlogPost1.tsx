@@ -125,6 +125,14 @@ export default function BlogPost1() {
             </aside>
             
         </div>
+        
+        <section className="contact-cta">
+            <div className="custom-container cta-content">
+                <h2>READY TO START YOUR PROJECT?</h2>
+                <p>Collaborate with our engineers to solve your most difficult thermal challenges.</p>
+                <Link to="/contact" className="btn-large">Consult an Engineer</Link>
+            </div>
+        </section>
     </main>
   );
 }
