@@ -1,14 +1,35 @@
 import { Link } from 'react-router-dom';
 import { Logo } from './Logo';
+import { useState } from 'react';
 
 export default function Navbar() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
     <header className="site-header">
+        <div className="top-bar" style={{ padding: '8px 0', fontSize: '13px', width: '100%' }}>
+            <div className="custom-container" style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
+                <div style={{ display: 'flex', alignItems: 'center' }}>
+                    <a href="#" style={{ color: 'var(--accent-red)', textDecoration: 'none', fontWeight: 'bold' }}>English</a>
+                    <span style={{ margin: '0 10px', color: '#999' }}>|</span>
+                    <a href="#" style={{ color: '#333', textDecoration: 'none' }}>繁體中文</a>
+                    <span style={{ margin: '0 10px', color: '#999' }}>|</span>
+                    <Link to="/search" style={{ color: '#333', display: 'flex', alignItems: 'center', fontSize: '14px' }}>
+                        <i className="fa-solid fa-magnifying-glass"></i>
+                    </Link>
+                </div>
+            </div>
+        </div>
         <div className="custom-container header-flex">
             <Link to="/" className="logo-link" style={{ height: '50px', display: 'flex', alignItems: 'center' }}>
                 <Logo className="logo-svg" />
             </Link>
-            <nav>
+            
+            <button className="mobile-menu-btn" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+                <i className={`fa-solid ${isMobileMenuOpen ? 'fa-xmark' : 'fa-bars'}`}></i>
+            </button>
+
+            <nav className={`nav-menu ${isMobileMenuOpen ? 'open' : ''}`}>
                 <ul className="nav-ul">
                     <li className="nav-item">
                         <span className="nav-link cursor-pointer">Products & Capabilities ▾</span>

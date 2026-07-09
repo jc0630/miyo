@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
-
 @theme {
   --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -22,8 +20,8 @@ body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color: var(-
 a { text-decoration: none; transition: 0.3s; }
 
 /* --- Header (保持設計) --- */
-.site-header { background: var(--white); border-bottom: 1px solid var(--border); height: 85px; position: sticky; top: 0; z-index: 1000; display: flex; align-items: center; }
-.header-flex { display: flex; justify-content: space-between; align-items: center; width: 100%; }
+.site-header { background: var(--white); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 1000; display: flex; flex-direction: column; }
+.header-flex { display: flex; justify-content: space-between; align-items: center; width: 100%; height: 85px; }
 .logo { font-weight: 900; font-size: 24px; color: var(--primary-blue); }
 .logo span { color: var(--accent-red); }
 .nav-ul { display: flex; list-style: none; align-items: center; margin: 0; padding: 0;}
@@ -32,7 +30,7 @@ a { text-decoration: none; transition: 0.3s; }
 .nav-link:hover { color: var(--accent-red); }
 
 /* Mega Menu */
-.mega-menu { position: absolute; top: 85px; left: 0; width: 100%; background: var(--white); border-bottom: 4px solid var(--accent-red); box-shadow: 0 20px 40px rgba(0,0,0,0.1); display: none; padding: 40px 0; text-align: left;}
+.mega-menu { position: absolute; top: 100%; left: 0; width: 100%; background: var(--white); border-bottom: 4px solid var(--accent-red); box-shadow: 0 20px 40px rgba(0,0,0,0.1); display: none; padding: 40px 0; text-align: left;}
 .nav-item:hover .mega-menu { display: block; }
 .mega-grid { display: grid; grid-template-columns: 1fr 2.5fr; gap: 60px; max-width: 1200px; margin: 0 auto; padding: 0 40px;}
 .mega-title h2 { color: var(--primary-blue); font-size: 22px; margin-bottom: 10px; }
@@ -236,14 +234,31 @@ details[open] summary::after { content: '-'; }
 .term-item strong { color: var(--primary-blue); display: block; font-size: 16px; margin-bottom: 5px; text-transform: uppercase; }
 .term-item p { margin: 0; font-size: 15px; color: var(--text-gray); }
 
+.mobile-menu-btn { display: none; }
+
 @media (max-width: 1024px) {
-    .sol-grid, .ind-grid, .product-grid, .cert-grid, .stats-grid, .mega-grid, .contact-wrapper, .faq-layout, .scenario-grid { grid-template-columns: 1fr; }
+    .sol-grid, .ind-grid, .product-grid, .cert-grid, .stats-grid, .mega-grid, .contact-wrapper, .faq-layout, .scenario-grid, .footer-grid { grid-template-columns: 1fr; }
     .about-flex, .policy-flex, .intro-flex, .flex-block { flex-direction: column !important; }
     .timeline-item { width: 100%; padding-left: 40px; text-align: left !important; margin-left: 0 !important;}
     .timeline-item::after { left: -8px !important; }
     .timeline-line { left: 0; transform: none; }
-    .nav-ul { display: none; }
+    .mobile-menu-btn { display: block; background: none; border: none; font-size: 24px; color: var(--primary-blue); cursor: pointer; }
+    .nav-menu { display: none; width: 100%; }
+    .nav-menu.open { display: block; position: absolute; top: 100%; left: 0; background: white; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-top: 1px solid #eee; padding: 10px 0; z-index: 1000;}
+    .nav-ul { display: flex; flex-direction: column; align-items: flex-start; padding: 0 20px; }
+    .nav-item { margin-left: 0; width: 100%; border-bottom: 1px solid #eee; position: relative;}
+    .nav-item:last-child { border-bottom: none; }
+    .nav-link { padding: 15px 0; font-size: 14px; width: 100%; }
     .mega-menu { display: none !important; }
+    .section, .section-padding { padding: 50px 0; }
+    .custom-container { padding: 0 20px; }
+    .hero-banner h1, .about-hero h1, .contact-hero h1, .hero-ind h1, .hero-sol h1, .resource-hero h1 { font-size: 32px; }
+    .hero-banner, .about-hero, .contact-hero, .hero-ind, .hero-sol, .resource-hero { height: 300px; }
+    .cta-content h2, .experience-banner h2 { font-size: 28px; }
+    .contact-cta, .experience-banner, .video-box, .intro-section, .timeline-section, .alternating-section { padding: 60px 0; }
+    .section-header h2, .section-title { font-size: 24px; }
+    .footer-grid { gap: 30px; }
+    .env-bar { flex-direction: column; gap: 20px; padding: 40px 20px; }
 }
 .hero-split { display: grid; grid-template-columns: repeat(3, 1fr); height: 600px; }
 .hero-split-block { position: relative; display: flex; align-items: center; justify-content: flex-start; padding: 60px; text-decoration: none; overflow: hidden; transition: 0.3s; }
