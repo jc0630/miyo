@@ -21,7 +21,7 @@ export default function Navbar() {
             </div>
         </div>
         <div className="custom-container header-flex">
-            <Link to="/" className="logo-link" style={{ height: '40px', display: 'flex', alignItems: 'center', flexShrink: 0 }}>
+            <Link to="/" className="logo-link" style={{ height: '28px', display: 'flex', alignItems: 'center', flexShrink: 0 }}>
                 <Logo className="logo-svg" />
             </Link>
             
