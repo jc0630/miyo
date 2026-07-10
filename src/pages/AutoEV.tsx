@@ -27,7 +27,18 @@ export default function AutoEV() {
         <section className="alternating-section custom-container">
             
             <div className="flex-block">
-                <div className="flex-img" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80')" }}></div>
+                <div className="flex-img" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'none' }}>
+                <div className="video-container" style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', width: '100%', borderRadius: '8px', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}>
+                    <iframe 
+                        src="https://www.youtube.com/embed/JJOo0UyktII" 
+                        title="MIYO Mirror De-icing"
+                        frameBorder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowFullScreen
+                        style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                    ></iframe>
+                </div>
+            </div>
                 <div className="flex-text">
                     <h2>Superior Visibility:<br/>Mirror De-icing & Defogging</h2>
                     <p>Driving safety in winter and rainy seasons starts with a clear view. MIYO’s Polyester Film Heaters are the benchmark for automotive rear-view mirror thermal management.</p>
@@ -41,7 +52,7 @@ export default function AutoEV() {
             </div>
 
             <div className="flex-block">
-                <div className="flex-img" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1555664424-778a1e5e1b48?auto=format&fit=crop&q=80')" }}></div>
+                <div className="flex-img" style={{ backgroundImage: "url('/auto-evpic.png')" }}></div>
                 <div className="flex-text">
                     <h2>Advanced Engineering:<br/>Precision Circuit Adhesion</h2>
                     <p>Automotive environments demand extreme durability. MIYO utilizes proprietary surface treatment and circuit adhesion techniques to ensure that our heating elements remain stable through lifelong vibrations and thermal cycling.</p>

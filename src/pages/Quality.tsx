@@ -40,7 +40,7 @@ export default function Quality() {
         <section className="section bg-light">
             <div className="custom-container">
                 <div className="policy-flex">
-                    <div className="policy-img" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80')" }}></div>
+                    <div className="policy-img" style={{ backgroundImage: "url('/品質認證.jpg')" }}></div>
                     <div className="policy-text">
                         <div className="section-header"><h2>Our Quality Philosophy</h2></div>
                         <p>At MIYO Technology, quality is engineered into every circuit layout and material choice. Our philosophy centers on <strong>"Precision & Reliability"</strong>—ensuring that every flexible heater performs consistently under the most rigorous industrial, medical, and automotive conditions.</p>
@@ -49,7 +49,7 @@ export default function Quality() {
                 </div>
 
                 <div className="policy-flex">
-                    <div className="policy-img" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80')" }}></div>
+                    <div className="policy-img" style={{ backgroundImage: "url('/品質認證2.jpg')" }}></div>
                     <div className="policy-text">
                         <div className="section-header"><h2>Testing & Validation</h2></div>
                         <p>Beyond standard inspections, MIYO employs high-end testing methodologies to guarantee performance:</p>

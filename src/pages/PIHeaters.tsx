@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 export default function PIHeaters() {
   return (
     <main>
-        <section className="hero-banner pi-heaters border-left" style={{ backgroundImage: "url('/KAI05150.jpg')" }}>
+        <section className="hero-banner pi-heaters border-left" style={{ backgroundImage: "linear-gradient(rgba(22, 33, 122, 0.8), rgba(22, 33, 122, 0.8)), url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80')" }}>
             <div className="custom-container">
                 <h1>Polyimide / Kapton Heaters</h1>
             </div>
@@ -16,7 +16,7 @@ export default function PIHeaters() {
                     <p className="desc-highlight">High-performance polyimide heaters designed for precision thermal stability in extreme environments.</p>
                     <p>MIYO’s Polyimide (PI) heaters utilize industry-leading Kapton&reg; films to provide an ultra-low profile heating solution. These heaters are ideal for applications requiring rapid heat transfer, precise thermal control, and superior electrical insulation within confined spaces.</p>
                 </div>
-                <img src="/KAI05150.jpg" alt="Engineered Thin-Film Solutions" style={{ width: "100%", borderRadius: "8px", objectFit: "cover", boxShadow: "0 20px 40px rgba(0,0,0,0.1)" }} />
+                <img src="/KAI05150.jpg" alt="Engineered Thin-Film Solutions" style={{ width: "100%", height: "350px", borderRadius: "8px", objectFit: "cover", boxShadow: "0 20px 40px rgba(0,0,0,0.1)" }} />
             </div>
         </section>
 

@@ -5,7 +5,7 @@ export default function Faq() {
     <main>
         <section className="hero-banner">
             <div className="custom-container">
-                <h1>Resources</h1>
+                <h1>Technical Resources</h1>
             </div>
         </section>
         <div className="custom-container blog-list-layout">

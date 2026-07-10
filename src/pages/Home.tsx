@@ -34,7 +34,18 @@ export default function Home() {
                     <p>Founded in 2001, MIYO Technology has been at the forefront of flexible heating innovation. We specialize in Polyimide and Silicone Rubber heating elements, providing one-stop solutions from design-in engineering to high-volume manufacturing for global leaders.</p>
                     <Link to="/about" className="read-more-btn">Our Company Profile &rarr;</Link>
                 </div>
-                <div className="about-img"></div>
+                <div className="about-img" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <div className="video-container" style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', width: '100%', borderRadius: '8px', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}>
+                        <iframe 
+                            src="https://www.youtube.com/embed/C9aLEOCsRsM" 
+                            title="MIYO Technology Introduction"
+                            frameBorder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowFullScreen
+                            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                        ></iframe>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -43,7 +54,7 @@ export default function Home() {
                 <div className="section-header"><h2>Products & Capabilities</h2></div>
                 <div className="product-grid">
                     <div className="p-card">
-                        <div className="p-img" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1555664424-778a1e5e1b48?auto=format&fit=crop&q=80')" }}></div>
+                        <div className="p-img" style={{ backgroundImage: "url('/KAI05150.jpg')" }}></div>
                         <div className="p-content">
                             <h3>Polyimide (PI / Kapton)</h3>
                             <p>Ultra-thin, high-temp resistant heaters for medical and aerospace.</p>
@@ -51,7 +62,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="p-card">
-                        <div className="p-img" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80')" }}></div>
+                        <div className="p-img" style={{ backgroundImage: "url('/1.聚酯薄膜加熱器-1.jpg')" }}></div>
                         <div className="p-content">
                             <h3>Silicone Rubber Heaters</h3>
                             <p>Rugged industrial heaters designed for harsh environments.</p>
@@ -59,7 +70,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="p-card">
-                        <div className="p-img" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80')" }}></div>
+                        <div className="p-img" style={{ backgroundImage: "url('/KAI05216-2.jpg')" }}></div>
                         <div className="p-content">
                             <h3>Heater Integration</h3>
                             <p>Integrated assemblies with sensors, controllers, and insulation.</p>
