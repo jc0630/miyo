@@ -77,11 +77,16 @@ export default function About() {
 
         <section className="clients-section" style={{ padding: '80px 0', background: '#f8f8f8', textAlign: 'center' }}>
             <div className="custom-container">
-                <h2 style={{ fontSize: '32px', textTransform: 'uppercase', marginBottom: '40px', color: 'var(--text-dark)' }}>Our Clients</h2>
-                <div style={{ maxWidth: '900px', margin: '0 auto', border: '2px dashed #ccc', borderRadius: '8px', padding: '100px 20px', backgroundColor: '#fff', color: '#999', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-                    <i className="fa-regular fa-image" style={{ fontSize: '48px', marginBottom: '15px' }}></i>
-                    <h3 style={{ margin: '0 0 10px 0', color: '#666' }}>Client Logos Image Placeholder</h3>
-                    <p style={{ margin: 0, fontSize: '14px' }}>Upload your <strong>clients.jpg</strong> (or <strong>.png</strong>) to the <code>public/</code> folder via the file explorer and replace this block with an <code>&lt;img&gt;</code> tag.</p>
+                <h2 style={{ fontSize: '32px', textTransform: 'uppercase', marginBottom: '40px', color: 'var(--text-dark)' }}>Company Introduction</h2>
+                <div className="video-container" style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', maxWidth: '100%', borderRadius: '8px' }}>
+                    <iframe 
+                        src="https://www.youtube.com/embed/C9aLEOCsRsM" 
+                        title="MIYO Technology Introduction"
+                        frameBorder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowFullScreen
+                        style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                    ></iframe>
                 </div>
             </div>
         </section>
